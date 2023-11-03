@@ -1,5 +1,8 @@
 # solartom: a solar tomography package
 
+🚧🚧🚧 This package is under heavy development and will likely change dramatically. New features are on the way. 🚧🚧🚧
+
+
 ## What is solartom ?
 
 Tomography is the task of reconstructing a model based on observations. In this case, we use many 2D solar images to construct a 3D model of the solar environment.

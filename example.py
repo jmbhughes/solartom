@@ -2,8 +2,8 @@ import os
 import matplotlib.pyplot as plt
 import numpy as np
 import pylops
-from tomograpy import project_3d
-from tomograpy.ops import TomoOp
+from solartom import project_3d
+from solartom.ops import TomoOp
 
 def z_rotation_matrix_3d(angle):
     return np.array([[[np.cos(angle), np.sin(angle), 0],

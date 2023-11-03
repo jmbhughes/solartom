@@ -8,7 +8,7 @@ mod threeD;
 mod twoD;
 
 #[pymodule]
-fn tomograpy(_py: Python<'_>, m: &PyModule) -> PyResult<()> {
+fn solartom(_py: Python<'_>, m: &PyModule) -> PyResult<()> {
     #[pyfn(m)]
     #[pyo3(name = "project_3d")]
     fn project_3d_py<'py>(

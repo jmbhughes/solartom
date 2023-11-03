@@ -1,6 +1,6 @@
 import numpy as np
 from pylops import LinearOperator
-from tomograpy import project_3d, backproject_3d
+from solartom import project_3d, backproject_3d
 
 
 class TomoOp(LinearOperator):
