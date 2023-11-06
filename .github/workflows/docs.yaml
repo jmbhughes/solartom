@@ -13,13 +13,13 @@ jobs:
       - uses: actions/setup-python@v3
       - name: Install dependencies
         run: |
-          pip install -r docs/requirements.txt
+          pip install -r ./docs/requirements.txt
       - name: Sphinx build
         run: |
-          cd docs; make html; cd ..
+          cd ./docs; make html; cd ..
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           publish_branch: gh-pages
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: docs/build/html
+          publish_dir: ./docs/build/html
