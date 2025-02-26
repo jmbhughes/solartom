@@ -1,5 +1,5 @@
 [build-system]
-requires = ["maturin>=0.14,<0.15"]
+requires = ["maturin>=1.0,<2.0"]
 build-backend = "maturin"
 
 [project]
@@ -11,17 +11,10 @@ classifiers = [
     "Programming Language :: Python :: Implementation :: CPython",
     "Programming Language :: Python :: Implementation :: PyPy",
 ]
-dependencies = [
-    "numpy",
-    "matplotlib",
-    "pylops"
-]
+dependencies = ["numpy", "matplotlib", "pylops"]
 
 [project.optional-dependencies]
-test = [
-  "hypothesis",
-  "sympy"
-]
+test = ["hypothesis", "sympy"]
 
 [tool.maturin]
 python-source = "python"
